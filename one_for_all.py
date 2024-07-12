@@ -67,15 +67,6 @@ dirrec = args.dir
 wback = args.wayback
 pscan = args.ps
 full = args.full
-threads = args.dt
-pscan_threads = args.pt
-tout = args.T
-wdlist = args.w
-redir = args.r
-sslv = args.s
-sslp = args.sp
-dserv = args.d
-filext = args.e
 subd = args.sub
 output = args.o
 
