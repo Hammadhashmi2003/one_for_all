@@ -26,7 +26,10 @@ log_writer(
 )
 
 import argparse
-log_writer(f'OneForAll')
+
+VERSION = '1.1.6'
+log_writer(f'OneForAll v{VERSION}')
+
 
 parser = argparse.ArgumentParser(description=f'OneForAll - The Last Web Recon Tool You Will Need | v{VERSION}')
 parser.add_argument('url', help='Target URL')
@@ -89,8 +92,6 @@ data = {}
 def banner():
 	with open(meta_file_path, 'r') as metadata:
 		json_data = loads(metadata.read())
-		twitter_url = json_data['twitter']
-		comms_url = json_data['comms']
 
 	art = r'''
   --------   ----    ---- ------------           ------------   --------   -----------               ------    ----         ----         
